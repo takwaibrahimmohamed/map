@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/line-icons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="stylesheet" href="assets/css/listing-house.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+
+    <!-- cdn -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- jquery -->
+
+    <title>TiTravelRentals.com</title>
+
+    <style>
+     @media only screen and (max-width: 425px) {
+      .w-sm-50{
+        width: 50% !important;
+      }
+      .d-sm-none{
+        display: none !important;
+      }
+      .w-sm{
+        width: 100px !important;
+        height: 100px !important;
+      }
+      #demo{
+        width: 100% !important;
+      }
+      .filter-form{
+        padding: 20px 5px !important;
+      }
+      }
+
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!--------------------------- start navbar ----------------------------->
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-light bg-white"
+      data-aos="fade-down"
+    
+    >
+      <div class="container-lg">
+        <a class="navbar-brand" href="index.html"
+          ><img class="brand-logo" src="./assets/img/logo-1.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="apartment.html">Apartments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listing-house.html">Holiday houses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accommodation.html"
+                >Accomondation in the bay</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Map</a>
+            </li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Turist Guide <i class="fa-solid fa-chevron-down icon-arrow"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="accommodation.html">Accommodation in Croatia</a></li>
+            <li><a class="dropdown-item" href="summer-in-croatia.html">Summer In Croatia</a></li>
+            <li><a class="dropdown-item" href="about-croatia.html">About Croatia</a></li>
+            <li><a class="dropdown-item" href="beaches-in-croatia.html">Beaches In Croatia</a></li>
+            <li><a class="dropdown-item" href="national-parks-and-nature-parks.html">National Parks and Nature Parks</a></li>
+            <li><a class="dropdown-item" href="nudist-beaches-in-croatia.html">Nudist Beaches In Croatia</a></li>
+          </ul>
+        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item avatar-profile px-5">
+              <div class="avatar-img">
+                <img src="./assets/img/jezik.png" alt="" />
+              </div>
+              <a class="nav-link" href="#">Login for renters</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--------------------------- end navbar ----------------------------->
+
+
+    <!----------------- section -------------------------->
+
+    <section class="pt-5 w-100 listing-section position-relative">
+      <div class="px-md-5 m-0 d-flex justify-content-between row w-100 position-absolute">
+        <div class="col-lg-2">
+            <div class="mt-5 " >
+                <button style="
+                border: none !important;
+                border-radius:24px !important;
+                padding: 10px 25px;
+                background-color: #fff;
+                "><i class="fa-solid fa-chevron-left" style="margin-right: 10px;"></i> Show List </button>
+              </div>
+        </div>
+        <div class="col-lg-10">
+          <!----------------- header form section -------------------------->
+          <div class="filter-form" data-aos="zoom-in">
+            <div class="filter-form-container d-flex">
+              <div class="filter-inputs w-sm-50">
+                <div class="filter-search-form d-none d-md-block">
+                  <div class="filter-form-wrapper">
+                    <div class="filter-input">
+                      <select class="js-select2">
+                        <option value="O1" data-badge="">When</option>
+                        <option value="O1" data-badge="">Zadar riviera</option>
+                        <option value="O2" data-badge="">
+                          Zadar (Zadar riviera)
+                        </option>
+                        <option value="O3" data-badge="">
+                          Zaton (Zadar) (Zadar riviera)
+                        </option>
+                      </select>
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="filter-input">
+                      <input
+                        placeholder="Where"
+                        type="text"
+                        name="checkIn"
+                        id="datepicker"
+                        value=""
+                        class="calendar"
+                      />
+                      <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="filter-input guest-btn relative">
+                      <div class="notification-icons">i</div>
+                      <button id="increament">
+                        <i class="fa-sharp fa-regular fa-plus"></i>
+                      </button>
+                      <span id="number">Guest</span>
+                      <button id="decreament">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                    <div>
+                      <div class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-block d-md-none filter-btn w-100">
+                  <button><i class="fa-solid fa-chevron-left" style="padding-right: 10px;"></i> List </button>
+                </div>
+              </div>
+              <div class="filter-btn  w-sm-50">
+                <button class="bg_color" onclick="filterToggles()">
+                  <i class="fa-sharp fa-solid fa-sliders" style="padding-right: 10px;"></i> Filters
+                </button>
+              </div>
+            </div>
+            <div id="filterToggle">
+              <div class="filter-pills">
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <span id="dropdown-text">Unit type</span>
+                    <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                  </div>
+                </div>
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center position-relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <div class="notify-icons">i</div>
+                    <span id="dropdown-text">Max price</span>
+                  </div>
+                </div>
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center position-relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <span id="dropdown-text">Rooms</span>
+                    <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                  </div>
+                </div>
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center position-relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <div class="notify-icons">i</div>
+                    <span id="dropdown-text">Deviation</span>
+                    <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-pills mt-3">
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <span id="dropdown-text">Distance to beach</span>
+                    <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                  </div>
+                </div>
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center position-relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <span id="dropdown-text">Distance to center</span>
+                    <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                  </div>
+                </div>
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center position-relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <span id="dropdown-text">Aditional</span>
+                    <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                  </div>
+                </div>
+                <div class="dropdown-custom-btn w-100">
+                  <div
+                    class="dropdown-menu-btn d-flex justify-content-between align-items-center position-relative w-100"
+                    id="dropdown-menu-btn"
+                  >
+                    <span id="dropdown-text">Object ID</span>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-toggle-pills mt-3">
+                <div class="switch-box">
+                  <button type="button" class="toggle-switch-left">
+                    House
+                  </button>
+                  <button type="button" class="toggle-switch-right">
+                    Vile
+                  </button>
+                </div>
+                <div class="turist-guide-btn">
+                  <button class="turist-btn gap-3">
+                    <span class="px-3">Turist Guide Split</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="filter-loctions mt-3 p-3">
+                <p class="mb-3">Locations:</p>
+                <div class="locations-pills">
+                  <button class="loction-pills active">Istra</button>
+                  <button class="loction-pills">Kvarner</button>
+                  <button class="loction-pills">Crkvenica</button>
+                  <button class="loction-pills">Lika i Gorski Kotar</button>
+                  <button class="loction-pills">Kontinentalna Hrvatska</button>
+                  <button class="loction-pills">Zadar</button>
+                  <button class="loction-pills">Biograd</button>
+                  <button class="loction-pills">Šibenik</button>
+                  <button class="loction-pills">Trogir</button>
+                  <button class="loction-pills">Split</button>
+                  <button class="loction-pills">Omiš</button>
+                  <button class="loction-pills">Makarska</button>
+                  <button class="loction-pills">Pelješac</button>
+                  <button class="loction-pills">Dubrovnik</button>
+                </div>
+              </div>
+              <div class="d-block d-md-none filter-btn" style="width: 100%;margin: 10px 0;" >
+                <button style="width: 285px;"><i class="fa-solid fa-search" style="padding-right: 10px;"></i> Search </button>
+              </div>
+            </div>
+            <div
+              class="filter-form-container d-sm-none d-md-flex justify-content-between align-items-center py-3 row"
+            >
+              <div
+                class="d-flex  justify-content-between align-items-center px-3 col-md-6"
+              >
+                <p class="filter-text">251 <sub>results</sub></p>
+                <p class="all-results">Clear all</p>
+              </div>
+              <div class="filter-sort col-md-6">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="select-menu w-100">
+                    <div
+                      class="select-btn d-flex justify-content-between align-items-center relative"
+                      id="select-btn"
+                    >
+                      <span id="text">Sort by</span>
+                      <i class="fa-solid fa-chevron-down icon-arrow"></i>
+                    </div>
+                    <ul class="lists">
+                      <li class="option" style="--i: 5">
+                        <span class="option-text">By Name</span>
+                      </li>
+                      <li class="option" style="--i: 4">
+                        <span class="option-text">By Price</span>
+                      </li>
+                      <li class="option" style="--i: 3">
+                        <span class="option-text">By Lower Price</span>
+                      </li>
+                      <li class="option" style="--i: 2">
+                        <span class="option-text">By Colour</span>
+                      </li>
+                      <li class="option" style="--i: 1">
+                        <span class="option-text">By Location</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------- end header form section -------------------------->
+        </div>
+        
+      </div>
+      <div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="100%"
+                height="700px"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  border-radius: 16px;
+                  height: 700px;
+                  width: 100%;
+                }
+              </style>
+            </div>
+          </div>
+      </div>
+    </section>
+ 
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(".js-select2").select2({
+        closeOnSelect: false,
+        placeholder: "Where",
+        // allowHtml: true,
+        allowClear: true,
+        tags: true, // создает новые опции на лету
+      });
+    </script>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("#datepicker").datepicker({
+          format: "dd-mm-yyyy",
+          startDate: "+1d",
+        });
+      });
+    </script>
+
+    <!--  date piker -->
+    <!--  date piker -->
+    <script></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript"></script>
+  
+
+    <!-- multiselect -->
+
+    <!-- multiselect -->
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.breadcrum-wrapper {
+  padding-bottom: 0;
+}
+
+.breadcrum {
+  font-size: 14px;
+}
+
+.breadcrum a {
+  font-size: 14px;
+  color: #8f918e;
+  text-decoration: none;
+}
+
+.breadcrum-active {
+  color: aliceblue;
+}
+
+.about-hero .custom-bold-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  text-align: center;
+}
+
+.partner-about .partner-logo {
+  height: 70px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+
+.custom-color {
+  color: #2a2d30;
+}
+.company-info {
+  background-color: #f6f9f6;
+  border-radius: 16px;
+}
+
+/* ======================== accommodation ================================ */
+
+.slider img {
+  width: 100%;
+  height: 340px;
+  border-radius: 16px;
+}
+
+.slider-assets {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider-details {
+  flex: 1;
+}
+.slider-details p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.slider-btn {
+  gap: 20px;
+}
+.slider-btn button {
+  width: 40px;
+  height: 40px;
+  color: #298c3f;
+  border-radius: 50%;
+  border: 1px solid #298c3f;
+}
+
+.slider p a {
+  color: #252d9b;
+  text-decoration: none;
+}
